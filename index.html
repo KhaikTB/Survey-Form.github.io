@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="Survey_Form.css">
+</head>
+<body>
+    <h1>Survey Form for Tech</h1>
+    <p>Help us improve your experience!</p>
+
+    <div id='background-image'></div>
+
+    <form id='survey-form' action="https://formsubmit.co/1de7032d0d8eaf84d6f64b0c2d23310b" method="POST" target="_blank" name="Email_Form">
+        
+        <input type="hidden" value="http://127.0.0.1:5500/Survey_Form_ThankYou.html" name="_next">
+        <input type="hidden" value="New email whooo, great success!" name="_subject">
+
+        <div class='form-flow'>
+            <label for="firstname">Name</label>
+            <input id='firstname' type="text" required="" name="First_Name" placeholder="Enter your name">
+        </div>
+
+        <div class='form-flow'>
+            <label for="emailaddress">Email</label>
+            <input id='emailaddress' type="email" required="" name="Email" placeholder="Enter your email address">
+        </div>
+
+        <div class='form-flow'>
+            <label for="number">Age</label>
+            <input id='number' type="number" min="18" max="100" required="" name="Age" placeholder="Enter your age">
+        </div>
+
+        <!-- Question Options -->
+        <div class='form-flow'>
+            <label class='Qtechrec' for="Qfavtech">Which option best describes your favorite tech ?</label>
+
+            <select id='options' name="Options">
+                <option value="PC">PC</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Android">Android Phone</option>
+                <option value="Apple">Apple Phone</option>
+                <option value="PlayStation">PlayStation</option>
+                <option value="XBox">XBox</option>
+                <option value="Nitendo">Nitendo</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <!-- Question "Recommend Iphone" -->
+        <div class='form-flow'>
+            <label class='Qtechrec' for="Qrecommend">Would you recommend the new iphone to someone ?</label>
+
+            <label class='Arecommend' for="recommend">
+                <input id='recommend' type="radio" name="Recommend" value="Yes">Yes</input>
+            </label>
+
+            <label class='Arecommend' for="willthink">
+                <input id='willthink' type="radio" name="Recommend" value="Will think about it">Will think about it</input>
+            </label>
+
+            <label class='Arecommend' for="no">
+                <input id='no' type="radio" name="Recommend" value="No">No</input>
+            </label>
+        </div>
+
+        <!-- Question "Next Tech to buy" -->
+        <div class='form-flow'>
+            <label for="Qnewtech">Next tech to buy: <small>(Check all that apply)</small></label>
+
+            <label class='new' for="input1">
+                <input id='input1' type="checkbox" name="New_Computer" value="Yes">New Computer</input>
+            </label>
+
+            <label class='new' for="input2">
+                <input id='input2' type="checkbox" name="New_Phone" value="Yes">New Phone</input>
+            </label>
+
+            <label class='new' for="input3">
+                <input id='input3' type="checkbox" name="New_Console" value="Yes">New Console</input>
+            </label>
+            
+            <label class='new' for="input4">
+                <input id='input4' type="checkbox" name="Other_Tech" value="Yes">Other Tech</input>
+            </label>
+        </div>
+
+        <div class='form-flow'>
+            <label for="comment">Comments or Suggestions ?</label>
+            <textarea id='comment' name="Comment" placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

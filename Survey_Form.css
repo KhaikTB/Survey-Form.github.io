@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*
+{
+    outline: none;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+:root
+{
+    --lightblue: hsl(197, 100%, 62%);
+}
+
+h1
+{
+    font-size: calc(30px + 2vw);
+    font-family: 'Lobster', cursive;
+    color: hsl(216, 100%, 58%);
+}
+
+p
+{
+    font-size: calc(20px + 1vw);
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+#background-image
+{
+    background-image: url("Tech.jpg");
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#survey-form
+{
+    background: hsla(187, 76%, 69%, 0.767);
+    max-width: 75%;
+    margin: 20px auto;
+    padding: calc(10px + 1vw);
+    box-shadow: 0px 0px 15px 15px hsla(0, 0%, 0%, 0.5);
+}
+
+.form-flow
+{
+    margin-bottom: calc(5px + 1vw);
+}
+
+label
+{
+    display: block;
+    margin: calc(5px + 0.5vw);
+    font-size: calc(20px + 0.5vw);
+}
+
+input
+{
+    font-size: calc(10px + 0.8vw);
+    padding: calc(5px + 0.5vw);
+    border: solid var(--lightblue) 5px;
+    width: 75%;
+    text-align: center;
+}
+
+.Qtechrec
+{
+    margin: calc(20px + 0.5vw) auto;
+}
+
+/* Question Favorite Tech Options */
+#options
+{
+    font-size: calc(15px + 0.5vw);
+    padding: calc(5px + 0.5vw);
+    border: solid var(--lightblue) 3px;
+}
+
+/* Question Recommend Iphone & Next Tech */
+.Arecommend, .new
+{
+    color: white;
+    padding: calc(5px + 0.5vw);
+}
+
+/* Radio and Checkbox */
+input[type="radio"], [type="checkbox"]
+{
+    width: calc(15px + 0.25vw);
+    height: calc(15px + 0.25vw);
+    margin: calc(10px + 0.5vw);
+}
+
+#comment
+{
+    font-size: calc(10px + 0.8vw);
+    padding: calc(5px + 0.5vw);
+    border: solid var(--lightblue) 3px;
+    width: 75%;
+    margin-top: 10px;
+}
+
+button
+{
+    font-size: calc(15px + 1vw);
+    font-family: 'Pacifico', cursive;
+    padding: calc(5px + 0.5vw) calc(10px + 0.5vw);
+    border: solid var(--lightblue) 3px;
+    border-radius: 15%;
+    background: linear-gradient(90deg, rgba(65,65,221,1) 23%, rgba(43,240,227,1) 70%);
+}
+
+button:active
+{
+	transform: scale(0.75);
+}
